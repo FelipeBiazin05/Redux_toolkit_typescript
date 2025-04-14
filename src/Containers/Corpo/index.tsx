@@ -10,9 +10,9 @@ const BodyCounter = () => {
 
     return(
         <CorpoContador>
-            <BotaoContador onClick={() => dispatch(decrementar())}>-</BotaoContador> 
+            <BotaoContador onClick={() => dispatch(decrementar(5))}>-</BotaoContador> 
             <h1>{ contadorInicial }</h1>
-            <BotaoContador onClick={() => dispatch(incrementar())}>+</BotaoContador>
+            <BotaoContador onClick={() => dispatch(incrementar(5))}>+</BotaoContador>
         </CorpoContador>
     )
 }
